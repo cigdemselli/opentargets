@@ -48,4 +48,7 @@ With a diasease_id such as Orphanet_399
 ```
 python scriptOT.py -d Orphanet_399
 ```
-
+To access help
+```
+python scriptOT.py -h
+```
