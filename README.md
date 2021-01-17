@@ -12,13 +12,13 @@ Installation of *pandas*, *argparse* and *opentargets* modules are required.
 ```
 python --version
 ```
-This should give an output like Python 3.6.3. If this is not the case, please install the latest 3.x version from python.org.
+This should give an output like `Python 3.6.3`. If this is not the case, please install the latest 3.x version from `python.org`.
 
-2) Ensure pip is available. You can check this by running:
+2) Ensure `pip` is available. You can check this by running:
 ```
 pip --version
 ```
-This should give an output like pip 20.3.3. If this is not the case, download the get-pip.py file from https://bootstrap.pypa.io/get-pip.py and install pip by running:
+This should give an output like `pip 20.3.3`. If this is not the case, download the `get-pip.py` file from https://bootstrap.pypa.io/get-pip.py and install `pip` by running:
 ```
 python get-pip.py
 ```
@@ -40,14 +40,30 @@ Running the programme without any parameters or with more than one parameter wil
 
 **Example usage on a unix-like machine**
 
+1) Make sure Python script `scriptOT.py` is in your `PATH`. You can check this by running:
+```
+ls
+```
+2) Make the script executable by running:
+```
+chmod +x scriptOT.py
+```
+3) load python 
+```
+module load python
+```
+4) Run the script
+
 With a target_id such as ENSG00000197386
 ```
 python scriptOT.py -t ENSG00000197386
 ```
-With a diasease_id such as Orphanet_399
+
+or with a diasease_id such as Orphanet_399
 ```
 python scriptOT.py -d Orphanet_399
 ```
+
 To access help
 ```
 python scriptOT.py -h
